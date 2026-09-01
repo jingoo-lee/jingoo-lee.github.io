@@ -52,12 +52,17 @@ I am a Ph.D. candidate in the Department of Civil, Urban, Earth and Environmenta
 
 My research develops **deep learning surrogate models for the seismic response analysis of structures**, with a focus on **nuclear power plant (NPP) safety**. I am interested in making these models both *reliable* and *interpretable* — combining physics-informed and physically interpretable neural networks, probabilistic uncertainty quantification, virtual sensing for structural health monitoring, and Fourier neural operators for PDE-based engineering problems.
 
-{% include figure.liquid loading="eager" path="assets/img/research_overview.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+#### Featured research
+
+{% include figure.liquid loading="eager" path="assets/img/cacaie_virtual_sensing.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 <div class="caption">
-    My research at a glance: learning a fast, reliable surrogate that maps ground motion to structural responses — with virtual sensing, physical interpretability, and uncertainty quantification.
+    <b>Virtual sensing for nuclear power plants</b> — replacing dozens of physical accelerometers with a pretrained deep-learning model that reconstructs seismic floor responses from a single seismometer (<a href="https://doi.org/10.1111/mice.70051"><i>Computer-Aided Civil and Infrastructure Engineering</i></a>, 2025).
 </div>
 
-#### Featured research
+{% include figure.liquid loading="eager" path="assets/img/cacaie_equipment_inspection.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+<div class="caption">
+    <b>Rapid post-earthquake equipment inspection</b> — reconstructed floor responses across the structure flag which critical equipment exceeded safety thresholds, prioritizing what to inspect first (<a href="https://doi.org/10.1111/mice.70051">CACAIE</a>, 2025).
+</div>
 
 <video src="{{ '/assets/video/ned_cnn_reconstruction.mp4' | relative_url }}" class="rounded z-depth-1" style="width:100%;height:auto;display:block;" autoplay loop muted playsinline></video>
 <div class="caption">
