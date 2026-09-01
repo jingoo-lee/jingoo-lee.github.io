@@ -59,6 +59,26 @@ My research develops **deep learning surrogate models for the seismic response a
     My research at a glance: learning a fast, reliable surrogate that maps ground motion to structural responses — with virtual sensing, physical interpretability, and uncertainty quantification.
 </div>
 
+#### Featured research
+
+<div class="row justify-content-center mt-3">
+    <div class="col-lg-11">
+        {% include video.liquid path="assets/video/ned_cnn_reconstruction.mp4" class="img-fluid rounded z-depth-1" autoplay=true loop=true muted=true controls=false %}
+    </div>
+</div>
+<div class="caption">
+    <b>Physically interpretable 1D CNN</b> — learned filters accumulate to reconstruct the structural response, revealing which frequency bands each kernel captures (<i>Nuclear Engineering &amp; Design</i>, 2026).
+</div>
+
+<div class="row justify-content-center mt-4">
+    <div class="col-lg-11">
+        {% include figure.liquid loading="eager" path="assets/img/ress_attmmdl.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+<div class="caption">
+    <b>Attention-enhanced multimodal deep learning (Att-MMDL)</b> — fuses ground motion and structural parameters through multi-head attention for probabilistic seismic response prediction (<i>Reliability Engineering &amp; System Safety</i>, 2026).
+</div>
+
 **Selected contributions:**
 
 - A **virtual sensing** framework (Res-1D CNN) that predicts seismic floor responses at 139 locations from a single seismometer.
