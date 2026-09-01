@@ -54,6 +54,11 @@ My research develops **deep learning surrogate models for the seismic response a
 
 #### Featured research
 
+{% include figure.liquid loading="eager" path="assets/img/npp_aux_building.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+<div class="caption">
+    <b>The structures I model</b> — a high-fidelity finite element model of a nuclear power plant auxiliary building (left; monitored equipment in red) and its part-by-part decomposition (right). It generates the seismic response data that my deep-learning surrogates learn to reproduce.
+</div>
+
 {% include figure.liquid loading="eager" path="assets/img/cacaie_virtual_sensing.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 <div class="caption">
     <b>Virtual sensing for nuclear power plants</b> — replacing dozens of physical accelerometers with a pretrained deep-learning model that reconstructs seismic floor responses from a single seismometer (<a href="https://doi.org/10.1111/mice.70051"><i>Computer-Aided Civil and Infrastructure Engineering</i></a>, 2025).
