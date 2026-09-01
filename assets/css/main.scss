@@ -40,8 +40,44 @@ html[data-theme="dark"] {
 body {
   background-image: linear-gradient(180deg, rgba(31, 78, 121, 0.08), rgba(31, 78, 121, 0) 460px);
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* not fixed — background-attachment:fixed is buggy/janky on mobile Safari */
 }
 html[data-theme="dark"] body {
   background-image: linear-gradient(180deg, rgba(111, 170, 224, 0.12), rgba(111, 170, 224, 0) 460px);
+}
+
+/* ---- Mobile overflow safety: keep media inside the viewport ---- */
+* {
+  min-width: 0; /* let flex/grid children shrink instead of forcing horizontal scroll */
+}
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+img,
+video,
+svg,
+iframe,
+table,
+pre,
+figure img,
+figure video {
+  max-width: 100%;
+  height: auto;
+}
+/* long code / hidden BibTeX blocks must not stretch the page */
+pre,
+.highlight,
+.bibtex {
+  max-width: 100%;
+  overflow-x: auto;
+}
+code.language-bibtex,
+.language-bibtex {
+  display: block;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  max-width: 100%;
 }

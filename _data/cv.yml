@@ -1,7 +1,7 @@
 cv:
   name: Jingoo Lee
   label: Ph.D. Candidate, Structural & Seismic Engineering + Deep Learning
-  email: jingoo0223@gmail.com
+  email: jingoolee@unist.ac.kr
   location: Ulsan, Republic of Korea
   image: ""
   summary: Ph.D. candidate at UNIST developing deep learning surrogate models for the seismic response analysis of structures, with a focus on nuclear power plant safety, interpretable/physics-informed neural networks, uncertainty quantification, and virtual sensing.

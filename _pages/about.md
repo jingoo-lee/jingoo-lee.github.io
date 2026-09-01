@@ -9,10 +9,8 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Dept. of Civil, Urban, Earth &amp; Environmental Engineering</p>
-    <p>Advisor: Prof. Young-Joo Lee</p>
-    <p>Ulsan, Republic of Korea</p>
-    <p>jingoo0223@gmail.com</p>
+    <p>UNIST, Republic of Korea</p>
+    <p><a href="mailto:jingoolee@unist.ac.kr">jingoolee@unist.ac.kr</a></p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -50,31 +48,19 @@ I am a Ph.D. candidate in the Department of Civil, Urban, Earth and Environmenta
 
 My research develops **deep learning surrogate models for the seismic response analysis of structures**, with a focus on **nuclear power plant (NPP) safety**. I am interested in making these models both *reliable* and *interpretable* — combining physics-informed and physically interpretable neural networks, probabilistic uncertainty quantification, virtual sensing for structural health monitoring, and Fourier neural operators for PDE-based engineering problems.
 
-<div class="row justify-content-center mt-4 mb-2">
-    <div class="col-lg-11">
-        {% include figure.liquid loading="eager" path="assets/img/research_overview.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-</div>
+{% include figure.liquid loading="eager" path="assets/img/research_overview.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 <div class="caption">
     My research at a glance: learning a fast, reliable surrogate that maps ground motion to structural responses — with virtual sensing, physical interpretability, and uncertainty quantification.
 </div>
 
 #### Featured research
 
-<div class="row justify-content-center mt-3">
-    <div class="col-lg-11">
-        {% include video.liquid path="assets/video/ned_cnn_reconstruction.mp4" class="img-fluid rounded z-depth-1" autoplay=true loop=true muted=true controls=false %}
-    </div>
-</div>
+<video src="{{ '/assets/video/ned_cnn_reconstruction.mp4' | relative_url }}" class="rounded z-depth-1" style="width:100%;height:auto;display:block;" autoplay loop muted playsinline></video>
 <div class="caption">
     <b>Physically interpretable 1D CNN</b> — learned filters accumulate to reconstruct the structural response, revealing which frequency bands each kernel captures (<i>Nuclear Engineering &amp; Design</i>, 2026).
 </div>
 
-<div class="row justify-content-center mt-4">
-    <div class="col-lg-11">
-        {% include figure.liquid loading="eager" path="assets/img/ress_attmmdl.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-    </div>
-</div>
+{% include figure.liquid loading="eager" path="assets/img/ress_attmmdl.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 <div class="caption">
     <b>Attention-enhanced multimodal deep learning (Att-MMDL)</b> — fuses ground motion and structural parameters through multi-head attention for probabilistic seismic response prediction (<i>Reliability Engineering &amp; System Safety</i>, 2026).
 </div>
