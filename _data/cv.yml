@@ -32,6 +32,14 @@ cv:
         highlights:
           - "Military service: Jun. 2018 – May 2020"
 
+    Awards:
+      - title: Heki Shibata Early Career Award (Honorable Mention)
+        authors:
+          - SMiRT-28 International Scientific Committee
+        date: 2025-08
+        awarder: SMiRT-28 International Scientific Committee
+        summary: Awarded at the 28th International Conference on Structural Mechanics in Reactor Technology (SMiRT-28), Toronto, Canada — for "Design of 1D CNN kernels for predicting seismic response of nuclear power plants."
+
     Experience:
       - company: "Key research contribution: Virtual sensing framework (Res-1D CNN)"
         position: First author
