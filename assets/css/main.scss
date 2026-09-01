@@ -35,3 +35,13 @@ html[data-theme="dark"] {
   --global-theme-color: #6faae0;
   --global-hover-color: #6faae0;
 }
+
+/* ---- Hero gradient wash (subtle navy fade at top of every page) ---- */
+body {
+  background-image: linear-gradient(180deg, rgba(31, 78, 121, 0.08), rgba(31, 78, 121, 0) 460px);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+html[data-theme="dark"] body {
+  background-image: linear-gradient(180deg, rgba(111, 170, 224, 0.12), rgba(111, 170, 224, 0) 460px);
+}

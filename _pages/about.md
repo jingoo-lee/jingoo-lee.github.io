@@ -28,12 +28,23 @@ latest_posts:
   limit: 3
 ---
 
-<div style="display:flex;flex-wrap:wrap;gap:8px;margin:0.2rem 0 1.4rem;">
-  <span style="display:inline-flex;align-items:center;background:#1f4e79;color:#fff;border-radius:999px;padding:5px 14px;font-size:0.86rem;font-weight:600;">🏆 Heki Shibata Early Career Award</span>
-  <span style="display:inline-flex;align-items:center;background:#eaf1f8;color:#1f4e79;border:1px solid #1f4e79;border-radius:999px;padding:5px 14px;font-size:0.86rem;font-weight:600;">🎓 Ph.D. expected Feb. 2027</span>
-  <span style="display:inline-flex;align-items:center;background:#eaf1f8;color:#1f4e79;border:1px solid #1f4e79;border-radius:999px;padding:5px 14px;font-size:0.86rem;font-weight:600;">🔬 NPP Seismic × Deep Learning</span>
-  <span style="display:inline-flex;align-items:center;background:#eaf1f8;color:#1f4e79;border:1px solid #1f4e79;border-radius:999px;padding:5px 14px;font-size:0.86rem;font-weight:600;">⚙️ Virtual Sensing · PINN · FNO · UQ</span>
+<div id="typed-strings" style="display:none;">
+  <p>Deep learning surrogate models for seismic response.</p>
+  <p>Virtual sensing from a single seismometer.</p>
+  <p>Physics-informed &amp; interpretable neural networks.</p>
+  <p>Fourier neural operators for engineering PDEs.</p>
 </div>
+<div style="font-size:1.18rem;font-weight:500;color:var(--global-theme-color);min-height:1.7em;margin:0.1rem 0 1.3rem;">
+  <span id="typed"></span>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    if (window.Typed) {
+      new Typed('#typed', { stringsElement: '#typed-strings', typeSpeed: 45, backSpeed: 18, backDelay: 1700, startDelay: 350, loop: true, smartBackspace: true });
+    }
+  });
+</script>
 
 I am a Ph.D. candidate in the Department of Civil, Urban, Earth and Environmental Engineering at the **Ulsan National Institute of Science and Technology (UNIST)**, advised by **Prof. Young-Joo Lee**. I expect to receive my Ph.D. in February 2027. I hold a B.S. in Mechanical Engineering, also from UNIST.
 
