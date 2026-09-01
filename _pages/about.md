@@ -9,8 +9,10 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>UNIST, Republic of Korea</p>
-    <p><a href="mailto:jingoolee@unist.ac.kr">jingoolee@unist.ac.kr</a></p>
+    <div style="text-align: center;">
+      <p style="margin-bottom: 0.15rem;"><a href="https://www.unist.ac.kr/" target="_blank" rel="noopener">UNIST</a>, Republic of Korea</p>
+      <p><a href="mailto:jingoolee@unist.ac.kr">jingoolee@unist.ac.kr</a></p>
+    </div>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -30,6 +32,8 @@ latest_posts:
   <p>Deep learning surrogate models for seismic response.</p>
   <p>Virtual sensing from a single seismometer.</p>
   <p>Physics-informed &amp; interpretable neural networks.</p>
+  <p>Uncertainty quantification for reliable predictions.</p>
+  <p>Machine learning for natural-hazard risk.</p>
   <p>Fourier neural operators for engineering PDEs.</p>
 </div>
 <div style="font-size:1.18rem;font-weight:500;color:var(--global-theme-color);min-height:1.7em;margin:0.1rem 0 1.3rem;">
@@ -44,7 +48,7 @@ latest_posts:
   });
 </script>
 
-I am a Ph.D. candidate in the Department of Civil, Urban, Earth and Environmental Engineering at the **Ulsan National Institute of Science and Technology (UNIST)**, advised by **Prof. Young-Joo Lee**. I expect to receive my Ph.D. in February 2027. I hold a B.S. in Mechanical Engineering, also from UNIST.
+I am a Ph.D. candidate in the Department of Civil, Urban, Earth and Environmental Engineering at the [**Ulsan National Institute of Science and Technology (UNIST)**](https://www.unist.ac.kr/), advised by [**Prof. Young-Joo Lee**](https://ylee.unist.ac.kr/) in the [Structural Reliability &amp; Disaster Risk Lab](https://ylee.unist.ac.kr/). I expect to receive my Ph.D. in February 2027. I hold a B.S. in Mechanical Engineering, also from UNIST.
 
 My research develops **deep learning surrogate models for the seismic response analysis of structures**, with a focus on **nuclear power plant (NPP) safety**. I am interested in making these models both *reliable* and *interpretable* — combining physics-informed and physically interpretable neural networks, probabilistic uncertainty quantification, virtual sensing for structural health monitoring, and Fourier neural operators for PDE-based engineering problems.
 
