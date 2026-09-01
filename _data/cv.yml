@@ -1,0 +1,63 @@
+cv:
+  name: Jingoo Lee
+  label: Ph.D. Candidate, Structural & Seismic Engineering + Deep Learning
+  email: jingoo0223@gmail.com
+  location: Ulsan, Republic of Korea
+  image: ""
+  summary: Ph.D. candidate at UNIST developing deep learning surrogate models for the seismic response analysis of structures, with a focus on nuclear power plant safety, interpretable/physics-informed neural networks, uncertainty quantification, and virtual sensing.
+
+  social_networks:
+    - network: GoogleScholar
+      username: y-QWOo0AAAAJ
+
+  sections:
+    Education:
+      - institution: Ulsan National Institute of Science and Technology (UNIST)
+        location: Ulsan, Korea
+        url: https://www.unist.ac.kr/
+        area: Civil, Urban, Earth and Environmental Engineering
+        studyType: Combined Master's–Doctoral Program (Ph.D. expected Feb. 2027)
+        start_date: 2022-03
+        end_date: 2027-02
+        highlights:
+          - "Advisor: Prof. Young-Joo Lee"
+          - "Dissertation: Deep learning-based surrogate modeling for seismic response analysis of nuclear power plant structures"
+
+      - institution: Ulsan National Institute of Science and Technology (UNIST)
+        location: Ulsan, Korea
+        area: Mechanical Engineering
+        studyType: B.S.
+        start_date: 2015-03
+        end_date: 2022-02
+        highlights:
+          - "Military service: Jun. 2018 – May 2020"
+
+    Experience:
+      - company: "Key research contribution: Virtual sensing framework (Res-1D CNN)"
+        position: First author
+        location: UNIST
+        summary: Predicts seismic floor responses at 139 locations from a single seismometer.
+      - company: "Attention-enhanced multimodal deep learning (Att-MMDL)"
+        position: First author
+        location: UNIST
+        summary: Probabilistic seismic response prediction with structural uncertainty propagation.
+      - company: "Physically interpretable 1D CNN"
+        position: First author
+        location: UNIST
+        summary: FIR filter to structural transfer-function analogy enabling principled kernel-size design.
+      - company: "Windowed Recurrent Fourier Neural Operator (WR-FNO)"
+        position: First author
+        location: UNIST
+        summary: Nonlinear seismic response prediction of multi-DOF systems.
+
+    Skills:
+      - name: Machine Learning
+        keywords: "PyTorch, CNNs, Attention/Transformers, Fourier Neural Operators, PINNs, Uncertainty Quantification"
+      - name: Structural / Seismic Engineering
+        keywords: "Finite element analysis, Abaqus, Structural dynamics, Seismic response analysis, Structural health monitoring"
+
+    Languages:
+      - name: Korean
+        summary: "Native speaker"
+      - name: English
+        summary: "Professional working proficiency"
