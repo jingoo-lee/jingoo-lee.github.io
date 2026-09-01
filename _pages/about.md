@@ -28,6 +28,13 @@ latest_posts:
   limit: 3
 ---
 
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin:0.2rem 0 1.4rem;">
+  <span style="display:inline-flex;align-items:center;background:#1f4e79;color:#fff;border-radius:999px;padding:5px 14px;font-size:0.86rem;font-weight:600;">🏆 Heki Shibata Early Career Award</span>
+  <span style="display:inline-flex;align-items:center;background:#eaf1f8;color:#1f4e79;border:1px solid #1f4e79;border-radius:999px;padding:5px 14px;font-size:0.86rem;font-weight:600;">🎓 Ph.D. expected Feb. 2027</span>
+  <span style="display:inline-flex;align-items:center;background:#eaf1f8;color:#1f4e79;border:1px solid #1f4e79;border-radius:999px;padding:5px 14px;font-size:0.86rem;font-weight:600;">🔬 NPP Seismic × Deep Learning</span>
+  <span style="display:inline-flex;align-items:center;background:#eaf1f8;color:#1f4e79;border:1px solid #1f4e79;border-radius:999px;padding:5px 14px;font-size:0.86rem;font-weight:600;">⚙️ Virtual Sensing · PINN · FNO · UQ</span>
+</div>
+
 I am a Ph.D. candidate in the Department of Civil, Urban, Earth and Environmental Engineering at the **Ulsan National Institute of Science and Technology (UNIST)**, advised by **Prof. Young-Joo Lee**. I expect to receive my Ph.D. in February 2027. I hold a B.S. in Mechanical Engineering, also from UNIST.
 
 My research develops **deep learning surrogate models for the seismic response analysis of structures**, with a focus on **nuclear power plant (NPP) safety**. I am interested in making these models both *reliable* and *interpretable* — combining physics-informed and physically interpretable neural networks, probabilistic uncertainty quantification, virtual sensing for structural health monitoring, and Fourier neural operators for PDE-based engineering problems.
