@@ -52,6 +52,13 @@ I am a Ph.D. candidate in the Department of Civil, Urban, Earth and Environmenta
 
 My research develops **deep learning surrogate models for the seismic response analysis of structures**, with a focus on **nuclear power plant (NPP) safety**. I am interested in making these models both *reliable* and *interpretable* — combining physics-informed and physically interpretable neural networks, probabilistic uncertainty quantification, virtual sensing for structural health monitoring, and Fourier neural operators for PDE-based engineering problems.
 
+#### Research at a glance
+
+{% include figure.liquid loading="eager" path="assets/img/research_interests.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+<div class="caption">
+    My work sits at the intersection of <b>deep learning</b>, <b>structural engineering</b>, and <b>reliability &amp; uncertainty quantification</b> — with the goal of <b>trustworthy AI for structures</b>.
+</div>
+
 #### Featured research
 
 {% include figure.liquid loading="eager" path="assets/img/npp_aux_building.png" class="img-fluid rounded z-depth-1" zoomable=true %}

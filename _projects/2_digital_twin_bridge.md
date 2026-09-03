@@ -2,7 +2,7 @@
 layout: page
 title: Digital Twin & Vision AI for Bridge Disaster Response
 description: 디지털트윈 및 비전 인공지능 기반 교량 재난대응 상황실 구축 (중견연구 유형 1)
-img: assets/img/proj_bridge.png
+img: assets/img/proj_bridge_dt.jpg
 importance: 2
 category: work
 related_publications: true

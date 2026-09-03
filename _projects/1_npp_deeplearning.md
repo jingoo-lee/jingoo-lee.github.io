@@ -2,7 +2,7 @@
 layout: page
 title: Deep Learning for Seismic Assessment of Nuclear Power Plants
 description: 원전 구조물·기기 지진응답 및 손상평가를 위한 딥러닝 기술개발
-img: assets/img/npp_aux_building.png
+img: assets/img/proj_npp_ml.jpg
 importance: 1
 category: work
 related_publications: true
