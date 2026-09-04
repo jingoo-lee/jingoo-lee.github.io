@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Virtual sensing for nuclear safety: replacing accelerometers with a deep-learning model"
-date: 2026-09-04 09:00:00 +0900
+date: 2026-09-04 08:00:00 +0900
 description: Why I work on deep-learning surrogate models for the seismic response of nuclear power plant structures — and what "virtual sensing" actually buys us.
 tags: virtual-sensing seismic deep-learning nuclear-safety
 categories: research
