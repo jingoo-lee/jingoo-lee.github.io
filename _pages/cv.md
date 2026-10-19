@@ -1,6 +1,7 @@
 ---
 layout: cv
 permalink: /cv/
+title_ko: 이력
 title: CV
 nav: true
 nav_order: 5

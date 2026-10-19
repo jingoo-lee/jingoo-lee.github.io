@@ -1,5 +1,6 @@
 ---
 layout: page
+title_ko: 연구과제
 title: projects
 permalink: /projects/
 description: Research projects and funded grants
@@ -7,6 +8,7 @@ nav: true
 nav_order: 3
 display_categories: [work]
 horizontal: false
+description_ko: 참여 중인 연구과제
 ---
 
 <!-- pages/projects.md -->

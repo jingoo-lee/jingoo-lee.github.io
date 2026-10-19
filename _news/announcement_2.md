@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our **virtual sensing** framework for seismic floor responses in nuclear power plants is published in *Computer-Aided Civil and Infrastructure Engineering*.
+<span class="lang-en" markdown="1">Our **virtual sensing** framework for seismic floor responses in nuclear power plants is published in *Computer-Aided Civil and Infrastructure Engineering*.</span><span class="lang-ko" markdown="1">원전 층 응답 **가상 센싱** 프레임워크 논문이 *Computer-Aided Civil and Infrastructure Engineering*에 게재되었습니다.</span>

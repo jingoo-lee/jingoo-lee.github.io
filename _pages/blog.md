@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /blog/
+title_ko: 블로그
 title: blog
 nav: true
 nav_order: 1
