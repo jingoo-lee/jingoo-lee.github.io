@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: Journal articles, international and domestic conference papers, in reverse chronological order.
+description: Journal articles, international and domestic conference papers, and patents, in reverse chronological order.
 nav: true
 nav_order: 2
 ---
@@ -23,5 +23,8 @@ nav_order: 2
 
 <h2 class="bibliography-section">Domestic Conferences (Korea)</h2>
 {% bibliography --query @inproceedings[keywords=domestic] %}
+
+<h2 class="bibliography-section">Patents</h2>
+{% bibliography --query @misc[keywords=patent] %}
 
 </div>
