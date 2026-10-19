@@ -177,19 +177,30 @@ latest_posts:
         <a class="venue-chip" href="{{ '/projects/2_digital_twin_bridge/' | relative_url }}"><span class="lang-en">Project page →</span><span class="lang-ko">과제 페이지 →</span></a>
       </div>
     </article>
-    <article class="feature-card th-bridge text-only">
+    <article class="feature-card th-bridge">
+      <div class="feature-media">{% include figure.liquid loading="lazy" path="assets/img/bridge_kibse23_arch.png" class="img-fluid" zoomable=true %}</div>
       <div class="feature-body">
         <div class="card-theme"><span class="lang-en">Cable-stayed bridges</span><span class="lang-ko">사장교</span></div>
         <h3><span class="lang-en">Multi-kernel 1D CNN for cable tension</span><span class="lang-ko">다중 커널 1D CNN 케이블 장력 예측</span></h3>
-        <p class="lang-en">Predicting the cable tension of a cable-stayed bridge with a multi-kernel 1D CNN that combines convolution kernels of different sizes.</p>
-        <p class="lang-ko">크기가 서로 다른 합성곱 커널을 함께 쓰는 다중 커널 1D CNN으로 사장교 케이블 장력을 예측합니다.</p>
+        <p class="lang-en">One-step-ahead prediction of 17 stay-cable tensions on the 2nd Jindo Bridge (344 m main span) from temperature, wind, and tension monitoring data. Parallel kernels of size 4 and 32 beat an LSTM on all four overall metrics (RMSE 4.87 vs 7.32; peak RMSE 121.9 vs 197.0).</p>
+        <p class="lang-ko">제2진도대교(주경간 344 m)의 온도·풍속·장력 계측 데이터로 케이블 17개의 장력을 한 스텝 앞서 예측합니다. 크기 4와 32인 커널을 나란히 쓴 1D CNN이 모든 지표에서 LSTM보다 정확했습니다(RMSE 4.87 대 7.32, 피크 RMSE 121.9 대 197.0).</p>
         <span class="venue-chip">KIBSE 2023</span>
       </div>
     </article>
-    <article class="feature-card th-bridge text-only">
+    <article class="feature-card th-bridge">
+      <div class="feature-media">{% include figure.liquid loading="lazy" path="assets/img/bridge_tension_band.png" class="img-fluid" zoomable=true %}</div>
+      <div class="feature-body">
+        <div class="card-theme"><span class="lang-en">Cable-stayed bridges · Uncertainty</span><span class="lang-ko">사장교 · 불확실성</span></div>
+        <h3><span class="lang-en">Probabilistic cable tension from environment</span><span class="lang-ko">환경조건 기반 케이블 장력 확률 예측</span></h3>
+        <p class="lang-en">Fourteen probabilistic models predict 90 % bands of 17 cable tensions from 29 environmental variables such as temperature, wind, and traffic. Quantile models draw sharp bands that cover only 60–76 %, while GPR and a GRU with Gaussian likelihood reach the nominal 90 % at about 40 kN width.</p>
+        <p class="lang-ko">온도·풍속·교통량 등 환경변수 29개로 케이블 17개 장력의 90 % 예측 구간을 그리는 확률 모델 14종을 비교했습니다. 분위수 모델은 구간이 좁지만 60–76 %만 덮고, GPR과 가우시안 우도 GRU는 약 40 kN 폭으로 공칭 90 %를 달성했습니다.</p>
+        <span class="venue-chip">KIBSE 2026</span>
+      </div>
+    </article>
+    <article class="feature-card wide th-bridge text-only">
       <div class="feature-body">
         <div class="card-theme"><span class="lang-en">Cable-stayed bridges</span><span class="lang-ko">사장교</span></div>
-        <h3><span class="lang-en">Time-series response prediction</span><span class="lang-ko">교량 시계열 응답 예측</span></h3>
+        <h3><span class="lang-en">Time-series response prediction with multi-kernel deep learning</span><span class="lang-ko">다중 커널 딥러닝 교량 시계열 응답 예측</span></h3>
         <p class="lang-en">Time-series structural response prediction of cable-stayed bridges using a multi-kernel deep learning model.</p>
         <p class="lang-ko">다중 커널 딥러닝 모델로 사장교의 시계열 구조 응답을 예측합니다.</p>
         <span class="venue-chip">KSMI 2024</span>
