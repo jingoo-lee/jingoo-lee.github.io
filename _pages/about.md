@@ -29,6 +29,12 @@ latest_posts:
       <span class="lang-en">Deep learning × Structural &amp; seismic engineering</span>
       <span class="lang-ko">딥러닝 × 구조·지진공학</span>
     </p>
+    <div class="hero-tags">
+      <span class="tag t-npp"><span class="lang-en">Nuclear power plants</span><span class="lang-ko">원자력 발전소</span></span>
+      <span class="tag t-bridge"><span class="lang-en">Bridges &amp; SHM</span><span class="lang-ko">교량 · 구조 모니터링</span></span>
+      <span class="tag t-ml"><span class="lang-en">Interpretable DL</span><span class="lang-ko">해석 가능한 딥러닝</span></span>
+      <span class="tag t-uq"><span class="lang-en">Uncertainty</span><span class="lang-ko">불확실성 정량화</span></span>
+    </div>
     <div class="hero-typed"><span id="typed"></span></div>
     <div class="hero-buttons">
       <a class="hero-btn primary" href="{{ '/assets/pdf/cv.pdf' | relative_url }}" target="_blank" rel="noopener"><i class="fa-solid fa-file-lines"></i> CV</a>
@@ -95,22 +101,24 @@ latest_posts:
 </section>
 
 <section class="home-section">
-  <div class="section-eyebrow"><span class="lang-en">Highlights</span><span class="lang-ko">주요 연구</span></div>
+  <div class="section-eyebrow"><span class="lang-en">Highlights · Nuclear safety</span><span class="lang-ko">주요 연구 · 원전 안전</span></div>
   <h2 class="section-title"><span class="lang-en">Featured research</span><span class="lang-ko">대표 연구</span></h2>
   <div class="feature-grid">
 
-    <article class="feature-card wide">
+    <article class="feature-card wide th-npp">
       <div class="feature-media">{% include figure.liquid loading="lazy" path="assets/img/npp_aux_building.png" class="img-fluid" zoomable=true %}</div>
       <div class="feature-body">
+        <div class="card-theme"><span class="lang-en">Nuclear power plants</span><span class="lang-ko">원자력 발전소</span></div>
         <h3><span class="lang-en">The structures I model</span><span class="lang-ko">연구 대상 구조물</span></h3>
         <p class="lang-en">A high-fidelity finite element model of an NPP auxiliary building (monitored equipment in red) and its part-by-part decomposition. It generates the seismic response data my surrogates learn to reproduce.</p>
         <p class="lang-ko">원전 보조건물의 고정밀 유한요소 모델(빨간 점은 감시 대상 기기)과 층별 분해도입니다. 이 모델로 만든 지진 응답 데이터를 딥러닝 대리모델이 학습합니다.</p>
       </div>
     </article>
 
-    <article class="feature-card">
+    <article class="feature-card th-npp">
       <div class="feature-media">{% include figure.liquid loading="lazy" path="assets/img/cacaie_virtual_sensing.png" class="img-fluid" zoomable=true %}</div>
       <div class="feature-body">
+        <div class="card-theme"><span class="lang-en">Nuclear power plants</span><span class="lang-ko">원자력 발전소</span></div>
         <h3><span class="lang-en">Virtual sensing for NPPs</span><span class="lang-ko">원전 가상 센싱</span></h3>
         <p class="lang-en">A pretrained deep-learning model reconstructs seismic floor responses from a single seismometer, replacing dozens of physical accelerometers.</p>
         <p class="lang-ko">사전학습된 딥러닝 모델이 지진계 하나의 기록만으로 건물 곳곳의 층 응답을 복원해, 수십 개의 가속도계를 대신합니다.</p>
@@ -118,9 +126,10 @@ latest_posts:
       </div>
     </article>
 
-    <article class="feature-card">
+    <article class="feature-card th-npp">
       <div class="feature-media">{% include figure.liquid loading="lazy" path="assets/img/cacaie_equipment_inspection.png" class="img-fluid" zoomable=true %}</div>
       <div class="feature-body">
+        <div class="card-theme"><span class="lang-en">Nuclear power plants</span><span class="lang-ko">원자력 발전소</span></div>
         <h3><span class="lang-en">Rapid equipment inspection</span><span class="lang-ko">지진 후 신속 기기 점검</span></h3>
         <p class="lang-en">Reconstructed floor responses flag which critical equipment exceeded safety thresholds, prioritizing what to inspect first after an earthquake.</p>
         <p class="lang-ko">복원한 층 응답으로 안전 기준을 넘은 핵심 기기를 찾아, 지진 직후 무엇부터 점검할지 우선순위를 정합니다.</p>
@@ -128,9 +137,10 @@ latest_posts:
       </div>
     </article>
 
-    <article class="feature-card">
+    <article class="feature-card th-ml">
       <div class="feature-media"><video src="{{ '/assets/video/ned_cnn_reconstruction.mp4' | relative_url }}" autoplay loop muted playsinline></video></div>
       <div class="feature-body">
+        <div class="card-theme"><span class="lang-en">Interpretable DL</span><span class="lang-ko">해석 가능한 딥러닝</span></div>
         <h3><span class="lang-en">Physically interpretable 1D CNN</span><span class="lang-ko">물리적으로 해석 가능한 1D CNN</span></h3>
         <p class="lang-en">Learned filters accumulate to reconstruct the structural response, revealing which frequency band each kernel captures.</p>
         <p class="lang-ko">학습된 필터들이 쌓여 구조 응답을 재구성하는 과정을 보여주며, 각 커널이 어떤 주파수 대역을 담당하는지 드러냅니다.</p>
@@ -138,9 +148,10 @@ latest_posts:
       </div>
     </article>
 
-    <article class="feature-card">
+    <article class="feature-card th-uq">
       <div class="feature-media">{% include figure.liquid loading="lazy" path="assets/img/ress_attmmdl.png" class="img-fluid" zoomable=true %}</div>
       <div class="feature-body">
+        <div class="card-theme"><span class="lang-en">Uncertainty</span><span class="lang-ko">불확실성 정량화</span></div>
         <h3><span class="lang-en">Attention-enhanced multimodal DL</span><span class="lang-ko">어텐션 기반 멀티모달 딥러닝</span></h3>
         <p class="lang-en">Fuses ground motion and structural parameters through multi-head attention for probabilistic seismic response prediction.</p>
         <p class="lang-ko">지반운동과 구조 물성을 멀티헤드 어텐션으로 결합해 지진 응답을 확률적으로 예측합니다.</p>
@@ -151,20 +162,56 @@ latest_posts:
   </div>
 </section>
 
+
+<section class="home-section">
+  <div class="section-eyebrow th-bridge-text"><span class="lang-en">Bridges &amp; structural health monitoring</span><span class="lang-ko">교량 · 구조 건전성 모니터링</span></div>
+  <h2 class="section-title"><span class="lang-en">From nuclear plants to bridges</span><span class="lang-ko">원전에서 교량까지</span></h2>
+  <div class="feature-grid">
+    <article class="feature-card wide th-bridge">
+      <div class="feature-media">{% include figure.liquid loading="lazy" path="assets/img/proj_bridge_dt.jpg" class="img-fluid" zoomable=true %}</div>
+      <div class="feature-body">
+        <div class="card-theme"><span class="lang-en">Bridges · Digital twin</span><span class="lang-ko">교량 · 디지털트윈</span></div>
+        <h3><span class="lang-en">Digital twin &amp; vision AI for bridge disaster response</span><span class="lang-ko">디지털트윈·비전 AI 기반 교량 재난대응 상황실</span></h3>
+        <p class="lang-en">An NRF mid-career project (2024–2029) building a command center that fuses physics-based models, sensor data, and vision AI. I develop the data-driven surrogates and probabilistic response predictions that keep the digital twin in sync with monitoring data.</p>
+        <p class="lang-ko">물리 모델·센서 데이터·비전 AI를 결합해 교량 재난대응 상황실을 만드는 한국연구재단 중견연구(2024–2029)입니다. 디지털트윈이 계측 데이터와 맞물려 돌아가도록 데이터 기반 대리모델과 확률적 응답 예측을 맡고 있습니다.</p>
+        <a class="venue-chip" href="{{ '/projects/2_digital_twin_bridge/' | relative_url }}"><span class="lang-en">Project page →</span><span class="lang-ko">과제 페이지 →</span></a>
+      </div>
+    </article>
+    <article class="feature-card th-bridge text-only">
+      <div class="feature-body">
+        <div class="card-theme"><span class="lang-en">Cable-stayed bridges</span><span class="lang-ko">사장교</span></div>
+        <h3><span class="lang-en">Multi-kernel 1D CNN for cable tension</span><span class="lang-ko">다중 커널 1D CNN 케이블 장력 예측</span></h3>
+        <p class="lang-en">Predicting the cable tension of a cable-stayed bridge with a multi-kernel 1D CNN that combines convolution kernels of different sizes.</p>
+        <p class="lang-ko">크기가 서로 다른 합성곱 커널을 함께 쓰는 다중 커널 1D CNN으로 사장교 케이블 장력을 예측합니다.</p>
+        <span class="venue-chip">KIBSE 2023</span>
+      </div>
+    </article>
+    <article class="feature-card th-bridge text-only">
+      <div class="feature-body">
+        <div class="card-theme"><span class="lang-en">Cable-stayed bridges</span><span class="lang-ko">사장교</span></div>
+        <h3><span class="lang-en">Time-series response prediction</span><span class="lang-ko">교량 시계열 응답 예측</span></h3>
+        <p class="lang-en">Time-series structural response prediction of cable-stayed bridges using a multi-kernel deep learning model.</p>
+        <p class="lang-ko">다중 커널 딥러닝 모델로 사장교의 시계열 구조 응답을 예측합니다.</p>
+        <span class="venue-chip">KSMI 2024</span>
+      </div>
+    </article>
+  </div>
+</section>
+
 <section class="home-section">
   <div class="section-eyebrow"><span class="lang-en">Contributions</span><span class="lang-ko">핵심 기여</span></div>
   <h2 class="section-title"><span class="lang-en">What I have built</span><span class="lang-ko">지금까지 만든 것</span></h2>
   <div class="contrib-grid">
-    <div class="contrib-card"><span class="contrib-num">01</span>
+    <div class="contrib-card c-npp"><span class="contrib-num">01</span>
       <p class="lang-en">A <b>virtual sensing</b> framework (Res-1D CNN) that predicts seismic floor responses at 139 locations from a single seismometer.</p>
       <p class="lang-ko">지진계 하나로 139개 지점의 층 응답을 예측하는 <b>가상 센싱</b> 프레임워크(Res-1D CNN).</p></div>
-    <div class="contrib-card"><span class="contrib-num">02</span>
+    <div class="contrib-card c-uq"><span class="contrib-num">02</span>
       <p class="lang-en">An <b>attention-enhanced multimodal</b> model (Att-MMDL) for probabilistic prediction with structural uncertainty propagation.</p>
       <p class="lang-ko">구조 불확실성 전파를 고려해 확률적으로 예측하는 <b>어텐션 기반 멀티모달</b> 모델(Att-MMDL).</p></div>
-    <div class="contrib-card"><span class="contrib-num">03</span>
+    <div class="contrib-card c-ml"><span class="contrib-num">03</span>
       <p class="lang-en">A <b>physically interpretable 1D CNN</b> built on an FIR-filter ↔ structural transfer-function analogy for principled kernel design.</p>
       <p class="lang-ko">FIR 필터와 구조 전달함수의 유사성에 기반해 커널 크기를 원리적으로 설계하는 <b>해석 가능한 1D CNN</b>.</p></div>
-    <div class="contrib-card"><span class="contrib-num">04</span>
+    <div class="contrib-card c-ml2"><span class="contrib-num">04</span>
       <p class="lang-en">A <b>Windowed Recurrent Fourier Neural Operator</b> (WR-FNO) for nonlinear seismic response of multi-DOF systems.</p>
       <p class="lang-ko">다자유도 시스템의 비선형 지진 응답을 예측하는 <b>윈도우 순환 푸리에 신경 연산자</b>(WR-FNO).</p></div>
   </div>
