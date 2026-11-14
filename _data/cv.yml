@@ -7,7 +7,7 @@ cv:
   summary: >-
     **Trustworthy Scientific AI for Safety-Critical Structures.**
     (1) *Physically interpretable deep learning:* 1D CNN kernels (FIR filters) linked to structural transfer functions, yielding a physics-based kernel-size rule K̂ = 1895 / f<sub>n</sub> (Nuclear Engineering and Design, 2026; SMiRT-28 Heki Shibata Early Career Award, Honorable Mention).
-    (2) *Neural operators across physics:* seismic structural dynamics with a Windowed Recurrent Fourier Neural Operator (WR-FNO) and electromagnetic NDT with an FNO for eddy-current flaw characterization in steam generator tubes, in international collaboration with CEA List, France and KRISS, Korea — two manuscripts in preparation.
+    (2) *Beyond the linear regime:* extended the framework to nonlinear hysteretic response under beyond-design-basis shaking — a kinematics-aware loss cut the mean error of a GRU model by 53% (mMAPE 1.00% → 0.47%, Bouc–Wen, at the training intensity), at ~3.4 ms per record on a GPU (≈55–1,100× faster than nonlinear time-history analysis). Operator-learning extensions — a Windowed Recurrent FNO (KNS 2026) and an FNO for eddy-current NDT with CEA List & KRISS — are in preparation.
     (3) *Virtual sensing and uncertainty for NPP seismic safety:* floor responses at 139 locations from a single seismometer (1 → 139), probabilistic prediction under structural uncertainty about 10<sup>5</sup>× faster than 100 Monte Carlo FE runs (35 h → <1 s), and inspection prioritization (Computer-Aided Civil and Infrastructure Engineering, 2025; Reliability Engineering & System Safety, 2026).
 
   social_networks:
@@ -77,7 +77,7 @@ cv:
         start_date: 2022-03
         end_date: present
         highlights:
-          - "Deep learning surrogate models for seismic response of NPP structures: Res-1D CNN virtual sensing, attention-enhanced multimodal deep learning (Att-MMDL) with uncertainty propagation, a filter-theoretic kernel-size design rule, and a GRU-based model for nonlinear hysteretic response (7-DOF) beyond the design basis."
+          - "Deep learning surrogate models for seismic response of NPP structures: Res-1D CNN virtual sensing, attention-enhanced multimodal deep learning (Att-MMDL) with uncertainty propagation, a filter-theoretic kernel-size design rule, and nonlinear hysteretic response of a 7-DOF model with a GRU trained on a kinematics-aware loss (dissertation Ch. 5); a Windowed Recurrent FNO (WR-FNO) for nonlinear MDOF response is a separate manuscript in preparation (presented at KNS 2026)."
       - company: CEA List, Université Paris-Saclay (France) & KRISS (Korea)
         position: International Collaboration
         summary: "Fourier Neural Operator for eddy current testing: flaw characterization in steam generator tubes under deposit interference, with P. Calmon, R. Miorelli, A. Skarlatos, A. Kyrgiazoglou (CEA List) and C.-S. Park (KRISS / UST)."
