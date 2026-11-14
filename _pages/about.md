@@ -55,7 +55,7 @@ news_limit: 4
   </article>
 
   <article class="work">
-    <div class="work-media"><video poster="{{ '/assets/img/ned_cnn_poster.png' | relative_url }}" src="{{ '/assets/video/ned_cnn_reconstruction.mp4' | relative_url }}" autoplay loop muted playsinline aria-label="Learned 1D CNN filters accumulating to reconstruct a structural response"></video></div>
+    <div class="work-media">{% include figure.liquid loading="lazy" path="assets/img/ned_cnn_poster.png" class="img-fluid" zoomable=true alt="Learned 1D CNN kernels, their frequency responses, and the reconstructed structural response" %}</div>
     <div class="work-text">
       <p class="work-kicker"><span class="lang-en">Interpretability</span><span class="lang-ko">해석 가능성</span></p>
       <h3><span class="lang-en">1D CNN kernels as FIR filters</span><span class="lang-ko">FIR 필터로 해석하는 1D CNN 커널</span></h3>

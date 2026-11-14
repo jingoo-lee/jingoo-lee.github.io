@@ -468,3 +468,13 @@ html[data-theme="dark"] .hero-photo img { filter: brightness(0.9); }
 .cv .card > * { margin-left: -16px !important; margin-right: -16px !important; }
 .post-header, .header-bar { margin-top: 40px !important; }
 @media (max-width: 734px) { .post-header, .header-bar { margin-top: 16px !important; } }
+/* recheck pass */
+.pub-prep .author + .periodical, .pub-patent .author + .periodical { display: none; }
+.cv .list-group-item > .row > div:first-child, .cv .list-group-item > .row > div:first-child * { text-align: left !important; }
+.cv .table-cv { margin-left: 0 !important; }
+.cv .table-cv td { padding-left: 0 !important; }
+.cv .list-group-item ul { margin-left: 0 !important; padding-left: 1.1em !important; }
+#light-toggle { position: relative; top: -2px; }
+.work-media { padding: 12px; }
+.cv .date-column { position: relative; left: 15px; }
+.cv ul.items { margin-left: 24px !important; padding-left: 1.1em !important; }
