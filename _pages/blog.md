@@ -2,9 +2,9 @@
 layout: default
 permalink: /blog/
 title_ko: 블로그
-title: blog
+title: Blog
 nav: true
-nav_order: 1
+nav_order: 4
 pagination:
   enabled: true
   collection: posts

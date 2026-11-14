@@ -3,41 +3,30 @@ layout: default
 ---
 <div class="post about-page">
   <article>
-    <div class="clearfix">{{ content }}</div>
+    {{ content }}
 
-    <!-- News -->
-    {% if page.announcements and page.announcements.enabled %}
-      <section class="home-section">
-        <div class="section-eyebrow"><span class="lang-en">Latest</span><span class="lang-ko">최근 소식</span></div>
-        <h2 class="section-title">
-          <a href="{{ '/news/' | relative_url }}" style="color: inherit"><span class="lang-en">News</span><span class="lang-ko">뉴스</span></a>
-        </h2>
-        {% include news.liquid limit=true %}
+    {% assign news_items = site.news | sort: 'date' | reverse %}
+    {% if news_items.size > 0 %}
+      <section class="block">
+        <h2 class="block-title"><span class="lang-en">News</span><span class="lang-ko">소식</span></h2>
+        <ul class="news-list">
+          {% for item in news_items limit: page.news_limit %}
+            <li>
+              <time datetime="{{ item.date | date: '%Y-%m-%d' }}"><span class="lang-en">{{ item.date | date: '%b %Y' }}</span><span class="lang-ko">{{ item.date | date: '%Y. %-m.' }}</span></time>
+              <div class="news-body">{{ item.content | remove: '<p>' | remove: '</p>' }}</div>
+            </li>
+          {% endfor %}
+        </ul>
       </section>
     {% endif %}
 
-    <!-- Selected papers -->
-    {% if page.selected_papers %}
-      <section class="home-section">
-        <div class="section-eyebrow"><span class="lang-en">Research output</span><span class="lang-ko">연구 성과</span></div>
-        <h2 class="section-title">
-          <a href="{{ '/publications/' | relative_url }}" style="color: inherit"
-            ><span class="lang-en">Selected publications</span><span class="lang-ko">대표 논문</span></a
-          >
-        </h2>
-        {% include selected_papers.liquid %}
-      </section>
-    {% endif %}
-
-    <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% social_links %}</div>
-        <div class="contact-note">
-          <span class="lang-en">{{ site.contact_note }}</span>
-          <span class="lang-ko">연구 협업이나 질문은 언제든 이메일로 연락 주세요.</span>
-        </div>
-      </div>
-    {% endif %}
+    <section class="block contact">
+      <h2 class="block-title"><span class="lang-en">Contact</span><span class="lang-ko">연락처</span></h2>
+      <p class="contact-mail"><a href="mailto:jingoolee@unist.ac.kr">jingoolee@unist.ac.kr</a></p>
+      <p class="contact-note">
+        <span class="lang-en">UNIST, Ulsan, Korea. Email is the best way to reach me.</span>
+        <span class="lang-ko">UNIST, 울산. 연구 협업이나 질문은 이메일로 연락 주세요.</span>
+      </p>
+    </section>
   </article>
 </div>

@@ -1,7 +1,7 @@
 ---
 layout: page
 title_ko: 연구과제
-title: projects
+title: Projects
 permalink: /projects/
 description: Research projects and funded grants
 nav: true
@@ -31,7 +31,7 @@ description_ko: 참여 중인 연구과제
     </div>
   </div>
   {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
+  <div class="row row-cols-1 row-cols-md-2">
     {% for project in sorted_projects %}
       {% include projects.liquid %}
     {% endfor %}
@@ -57,7 +57,7 @@ description_ko: 참여 중인 연구과제
     </div>
   </div>
   {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
+  <div class="row row-cols-1 row-cols-md-2">
     {% for project in sorted_projects %}
       {% include projects.liquid %}
     {% endfor %}

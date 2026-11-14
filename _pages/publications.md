@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title_ko: 논문
-title: publications
+title: Publications
 description: Journal articles, international and domestic conference papers, and patents, in reverse chronological order.
 nav: true
 nav_order: 2
@@ -13,7 +13,6 @@ description_ko: 저널 논문, 국제·국내 학술대회 발표, 특허를 최
 
 <!-- Bibsearch Feature -->
 
-{% include bib_search.liquid %}
 
 <div class="publications">
 
