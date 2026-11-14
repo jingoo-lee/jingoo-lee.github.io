@@ -1,7 +1,7 @@
 cv:
   name: Jingoo Lee
   label: Ph.D. Candidate, Civil, Urban, Earth, and Environmental Engineering, UNIST
-  email: jingoolee@unist.ac.kr · jingoo0223@gmail.com
+  email: jingoolee@unist.ac.kr
   location: Ulsan, Republic of Korea
   image: ""
   summary: >-
@@ -27,8 +27,6 @@ cv:
           - "Advisor: Prof. Young-Joo Lee"
           - "Dissertation: A Deep Learning-Based Framework for Predicting Seismic Responses under Uncertainty: Application to Nuclear Power Plant Structures"
           - "Chapters: Spatial (virtual sensing) → Probabilistic (structural uncertainty) → Interpretable (FIR-filter view of 1D CNN) → Nonlinear (hysteretic response)"
-          - "Dissertation defense: Dec. 2, 2026 (scheduled)"
-          - "Committee: Prof. Young-Joo Lee (Chair), Prof. Sukhoon Pyo, Prof. Myoungsu Shin, Prof. Junho Song, Dr. Minkyu Kim"
 
       - institution: Ulsan National Institute of Science and Technology (UNIST)
         location: Ulsan, Korea
@@ -104,9 +102,5 @@ cv:
         summary: "Professional working proficiency"
 
     References:
-      - name: Prof. Young-Joo Lee (Ph.D. advisor)
-        reference: "UNIST, Korea · ylee@unist.ac.kr"
-      - name: Dr. Jaebeom Lee (corresponding author on all journal papers)
-        reference: "KRISS & UST, Korea · jblee@kriss.re.kr"
-      - name: Dr. Roberto Miorelli
-        reference: "CEA List, Université Paris-Saclay, France · email upon request"
+      - name: Available upon request.
+        reference: ""
