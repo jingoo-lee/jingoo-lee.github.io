@@ -7,6 +7,9 @@ importance: 2
 category: work
 related_publications: true
 title_ko: 디지털트윈·비전 AI 기반 교량 재난대응
+summary_en: A bridge disaster-response command center built on digital twins and vision-based AI.
+funding: NRF / Ministry of Science and ICT (Mid-career Research)
+period: 2024–2029
 ---
 
 **디지털트윈 및 비전 인공지능 기반 교량 재난대응 상황실 구축**
