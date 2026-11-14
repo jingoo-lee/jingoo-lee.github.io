@@ -7,6 +7,9 @@ importance: 1
 category: work
 related_publications: true
 title_ko: 원전 지진 안전성 평가를 위한 딥러닝
+summary_en: Deep learning technologies for assessment of seismic responses and damage of nuclear power plant structures and equipment.
+funding: NRF / Ministry of Science and ICT
+period: 2022–2026
 ---
 
 **원전 구조물/기기 지진응답 및 손상평가를 위한 딥러닝 기술개발**

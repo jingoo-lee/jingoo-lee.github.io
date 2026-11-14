@@ -3,65 +3,19 @@ layout: page
 title_ko: 연구과제
 title: Projects
 permalink: /projects/
-description: Research projects and funded grants
+description: Funded research projects I work on.
 nav: true
 nav_order: 3
-display_categories: [work]
-horizontal: false
 description_ko: 참여 중인 연구과제
 ---
 
-<!-- pages/projects.md -->
-<div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-  {% endfor %}
-
-{% else %}
-
-<!-- Display projects without categories -->
-
 {% assign sorted_projects = site.projects | sort: "importance" %}
-
-  <!-- Generate cards for each project -->
-
-{% if page.horizontal %}
-
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-{% endif %}
-</div>
+<ul class="project-list">
+{% for project in sorted_projects %}
+  <li>
+    <a class="project-title" href="{{ project.url | relative_url }}"><span class="lang-en">{{ project.title }}</span><span class="lang-ko">{{ project.title_ko | default: project.title }}</span></a>
+    <p class="project-summary"><span class="lang-en">{{ project.summary_en }}</span><span class="lang-ko">{{ project.description }}</span></p>
+    <p class="project-meta">{{ project.funding }} · {{ project.period }}</p>
+  </li>
+{% endfor %}
+</ul>

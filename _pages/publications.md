@@ -18,7 +18,12 @@ description_ko: 저널 논문, 국제·국내 학술대회 발표, 특허를 최
 
 <h2 class="bibliography-section pub-journal-h"><span class="lang-en">Journal Articles</span><span class="lang-ko">저널 논문</span></h2>
 <div class="pub-sec pub-journal" markdown="0">
-{% bibliography --query @article %}
+{% bibliography --query @article[note!=In preparation] %}
+</div>
+
+<h2 class="bibliography-section"><span class="lang-en">Manuscripts in Preparation</span><span class="lang-ko">준비 중인 원고</span></h2>
+<div class="pub-sec pub-prep" markdown="0">
+{% bibliography --query @article[note=In preparation] %}
 </div>
 
 <h2 class="bibliography-section pub-intl-h"><span class="lang-en">International Conferences</span><span class="lang-ko">국제 학술대회</span></h2>

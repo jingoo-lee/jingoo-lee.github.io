@@ -18,8 +18,8 @@ news_limit: 4
       <p class="hero-meta">2027년 2월 박사학위 취득 예정 · UNIST 기계공학 학사</p>
     </div>
     <p class="hero-links">
-      <a href="mailto:jingoolee@unist.ac.kr">Email</a>
-      <a href="{{ '/assets/pdf/cv.pdf' | relative_url }}" target="_blank" rel="noopener">CV</a>
+      <a href="mailto:jingoolee@unist.ac.kr"><span class="lang-en">Email</span><span class="lang-ko">이메일</span></a>
+      <a href="{{ '/assets/pdf/cv.pdf' | relative_url }}" target="_blank" rel="noopener"><span class="lang-en">CV</span><span class="lang-ko">이력서</span></a>
       <a href="https://scholar.google.com/citations?user=y-QWOo0AAAAJ" target="_blank" rel="noopener">Google Scholar</a>
       <a href="https://github.com/jingoo-lee" target="_blank" rel="noopener">GitHub</a>
     </p>
@@ -36,7 +36,7 @@ news_limit: 4
     <div class="work-media">{% include figure.liquid loading="lazy" path="assets/img/cacaie_virtual_sensing.png" class="img-fluid" zoomable=true alt="Virtual sensing concept for nuclear power plants" %}</div>
     <div class="work-text">
       <p class="work-kicker"><span class="lang-en">Virtual sensing</span><span class="lang-ko">가상 센싱</span></p>
-      <h3><span class="lang-en">One seismometer, the whole building.</span><span class="lang-ko">지진계 하나로 건물 전체를.</span></h3>
+      <h3><span class="lang-en">Virtual sensing from a single seismometer</span><span class="lang-ko">지진계 하나로 하는 가상 센싱</span></h3>
       <p class="lang-en">A pretrained deep learning model reconstructs seismic floor responses at 139 locations in a nuclear power plant from a single seismometer, then flags which critical equipment to inspect first after an earthquake.</p>
       <p class="lang-ko">사전학습된 딥러닝 모델이 지진계 하나의 기록으로 원전 139개 지점의 층 응답을 복원하고, 지진 직후 어떤 핵심 기기부터 점검해야 할지 알려줍니다.</p>
       <a class="more" href="https://doi.org/10.1111/mice.70051" target="_blank" rel="noopener">Computer-Aided Civil and Infrastructure Engineering, 2025</a>
@@ -47,7 +47,7 @@ news_limit: 4
     <div class="work-media">{% include figure.liquid loading="lazy" path="assets/img/ress_attmmdl.png" class="img-fluid" zoomable=true alt="Attention-enhanced multimodal deep learning architecture" %}</div>
     <div class="work-text">
       <p class="work-kicker"><span class="lang-en">Uncertainty</span><span class="lang-ko">불확실성</span></p>
-      <h3><span class="lang-en">Predictions that know their limits.</span><span class="lang-ko">스스로의 한계를 아는 예측.</span></h3>
+      <h3><span class="lang-en">Uncertainty-aware floor response prediction</span><span class="lang-ko">불확실성을 고려한 층 응답 예측</span></h3>
       <p class="lang-en">An attention-enhanced multimodal model fuses ground motion and structural parameters to predict seismic floor responses probabilistically, propagating structural uncertainty through time.</p>
       <p class="lang-ko">어텐션 기반 멀티모달 모델이 지반운동과 구조 물성을 결합해 층 응답을 확률적으로 예측하고, 구조 불확실성을 시간에 따라 전파합니다.</p>
       <a class="more" href="https://doi.org/10.1016/j.ress.2026.112582" target="_blank" rel="noopener">Reliability Engineering &amp; System Safety, 2026</a>
@@ -55,10 +55,10 @@ news_limit: 4
   </article>
 
   <article class="work">
-    <div class="work-media"><video src="{{ '/assets/video/ned_cnn_reconstruction.mp4' | relative_url }}" autoplay loop muted playsinline aria-label="Learned 1D CNN filters accumulating to reconstruct a structural response"></video></div>
+    <div class="work-media"><video poster="{{ '/assets/img/ned_cnn_poster.png' | relative_url }}" src="{{ '/assets/video/ned_cnn_reconstruction.mp4' | relative_url }}" autoplay loop muted playsinline aria-label="Learned 1D CNN filters accumulating to reconstruct a structural response"></video></div>
     <div class="work-text">
       <p class="work-kicker"><span class="lang-en">Interpretability</span><span class="lang-ko">해석 가능성</span></p>
-      <h3><span class="lang-en">Neural networks that read like filters.</span><span class="lang-ko">필터처럼 읽히는 신경망.</span></h3>
+      <h3><span class="lang-en">1D CNN kernels as FIR filters</span><span class="lang-ko">FIR 필터로 해석하는 1D CNN 커널</span></h3>
       <p class="lang-en">Treating 1D CNN kernels as FIR filters links them to the structure's transfer function, which gives a physics-based rule for choosing kernel size and shows which frequency band each kernel captures.</p>
       <p class="lang-ko">1D CNN 커널을 FIR 필터로 보고 구조물의 전달함수와 연결해, 커널 크기를 물리적으로 정하는 규칙을 얻고 각 커널이 어떤 주파수 대역을 담당하는지 보여줍니다.</p>
       <a class="more" href="https://doi.org/10.1016/j.nucengdes.2026.115114" target="_blank" rel="noopener">Nuclear Engineering and Design, 2026</a>
