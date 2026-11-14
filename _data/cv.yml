@@ -7,8 +7,8 @@ cv:
   summary: >-
     **Trustworthy Scientific AI for Safety-Critical Structures.**
     (1) *Physically interpretable deep learning:* 1D CNN kernels (FIR filters) linked to structural transfer functions, yielding a physics-based kernel-size design rule (Nuclear Engineering and Design, 2026; SMiRT-28 Heki Shibata Early Career Award, Honorable Mention).
-    (2) *Neural operators across physics:* seismic structural dynamics with a Windowed Recurrent Fourier Neural Operator (WR-FNO) and electromagnetic NDT with an FNO for eddy-current flaw characterization in steam generator tubes, in international collaboration with CEA List (France) and KRISS (Korea).
-    (3) *Virtual sensing and uncertainty for NPP seismic safety:* floor responses at 139 locations from a single seismometer, time-series uncertainty propagation, and inspection prioritization (CACAIE, 2025; RESS, 2026).
+    (2) *Neural operators across physics:* seismic structural dynamics with a Windowed Recurrent Fourier Neural Operator (WR-FNO) and electromagnetic NDT with an FNO for eddy-current flaw characterization in steam generator tubes, in international collaboration with CEA List, France and KRISS, Korea — two manuscripts in preparation.
+    (3) *Virtual sensing and uncertainty for NPP seismic safety:* floor responses at 139 locations from a single seismometer, time-series uncertainty propagation, and inspection prioritization (Computer-Aided Civil and Infrastructure Engineering, 2025; Reliability Engineering & System Safety, 2026).
 
   social_networks:
     - network: GoogleScholar
@@ -56,9 +56,9 @@ cv:
         summary: "Jingoo Lee, Seungjun Lee, Young-Joo Lee\\*, Jaebeom Lee\\*"
       - title: "Flaw characterization in steam generator tubes under deposit interference using eddy current testing via a Fourier Neural Operator"
         publisher: "In preparation"
-        summary: "Jingoo Lee, Choon-Su Park, Pierre Calmon, Roberto Miorelli\\*, Anastasios Skarlatos, Athanasios Kyrgiazolou, Jaebeom Lee\\*"
+        summary: "Jingoo Lee, Choon-Su Park, Pierre Calmon, Roberto Miorelli\\*, Anastasios Skarlatos, Athanasios Kyrgiazoglou, Jaebeom Lee\\*"
       - title: "Recurrent Fourier Neural Operator for nonlinear seismic response prediction"
-        publisher: "In preparation"
+        publisher: "Manuscript in preparation (WR-FNO)"
         summary: "Jingoo Lee, Young-Joo Lee\\*, Jaebeom Lee\\*"
 
     Awards:
@@ -76,27 +76,23 @@ cv:
         start_date: 2022-03
         end_date: present
         highlights:
-          - Deep learning surrogate models (1D CNN, LSTM, Fourier Neural Operators) for seismic response prediction of NPP auxiliary buildings.
-          - Virtual sensing framework (Res-1D CNN) estimating floor responses at 139 locations from a single seismometer.
-          - Attention-enhanced multimodal deep learning (Att-MMDL) for probabilistic prediction with time-series uncertainty propagation.
-          - Physics-based kernel-size selection rule from FIR filter theory and structural transfer functions.
-          - Windowed Recurrent FNO (WR-FNO) for nonlinear seismic response of multi-DOF systems.
+          - "Deep learning surrogate models for seismic response of NPP structures: Res-1D CNN virtual sensing, attention-enhanced multimodal deep learning (Att-MMDL) with uncertainty propagation, a filter-theoretic kernel-size design rule, and a Windowed Recurrent Fourier Neural Operator (WR-FNO) for nonlinear multi-DOF response."
       - company: CEA List, Université Paris-Saclay (France) & KRISS (Korea)
         position: International Collaboration
-        summary: Fourier Neural Operator for eddy current testing — flaw characterization in steam generator tubes under deposit interference (manuscript in preparation).
-      - company: "Deep learning technologies for assessment of seismic responses and damage of nuclear power plant structures and equipment"
-        position: Participating graduate researcher (NRF / Ministry of Science and ICT, in collaboration with KAERI)
+        summary: "Fourier Neural Operator for eddy current testing: flaw characterization in steam generator tubes under deposit interference, with P. Calmon, R. Miorelli, A. Skarlatos, A. Kyrgiazoglou (CEA List) and C.-S. Park (KRISS / UST)."
+      - company: "NRF-funded project: Deep learning technologies for assessment of seismic responses and damage of nuclear power plant structures and equipment (NRF / Ministry of Science and ICT; in collaboration with KAERI)"
+        position: Graduate Research Assistant
         start_date: 2022-04
         end_date: 2026-12
-        summary: Authored the technical advisory report to KAERI (Nov. 2022) reviewing machine learning methods for seismic response prediction of NPP structures and their applicability to OPR-1000 / APR-1400 plants.
+        summary: Authored the technical advisory report to KAERI (Nov. 2022) reviewing machine learning methods for seismic response prediction and their applicability to OPR-1000 / APR-1400 plants.
 
     Skills:
       - name: Programming
-        keywords: "Python (PyTorch), MATLAB, Linux (basic), ABAQUS"
+        keywords: "Python (PyTorch), MATLAB"
       - name: Deep Learning
         keywords: "1D CNN, residual networks, LSTM, attention mechanisms, Fourier Neural Operators, uncertainty quantification"
       - name: Structural Analysis
-        keywords: "Finite element analysis, seismic response analysis, fragility assessment, Monte Carlo simulation"
+        keywords: "ABAQUS, finite element analysis, seismic response analysis, fragility assessment, Monte Carlo simulation"
       - name: Signal Processing
         keywords: "FIR filter design, spectral analysis, sensor data processing"
 
@@ -105,3 +101,11 @@ cv:
         summary: "Native"
       - name: English
         summary: "Professional working proficiency"
+
+    References:
+      - name: Prof. Young-Joo Lee (Ph.D. advisor)
+        reference: "UNIST, Korea · ylee@unist.ac.kr"
+      - name: Dr. Jaebeom Lee (corresponding author on all journal papers)
+        reference: "KRISS & UST, Korea · jblee@kriss.re.kr"
+      - name: Dr. Roberto Miorelli
+        reference: "CEA List, Université Paris-Saclay, France · email upon request"
