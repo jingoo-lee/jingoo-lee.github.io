@@ -577,3 +577,11 @@ html[data-theme="dark"] .work-media img, html[data-theme="dark"] .work-media vid
   .work-media { padding: 0 !important; background: none !important; }
   .cvx section { padding: 32px 0 32px !important; }
 }
+/* recheck v3 */
+.post-description span, .post-description .lang-en, .post-description .lang-ko { color: var(--text-2) !important; }
+.nowrap { white-space: nowrap; }
+.pub-prep::before { content: none !important; display: none !important; }
+.pub-prep .author + .periodical, .pub-prep .periodical { display: none !important; }
+.project-list li:first-child { border-top: 0; padding-top: 0; }
+html[data-theme="dark"] .work-media { padding: 0 !important; background: none !important; }
+@media (max-width: 734px) { .hero-line { line-height: 1.3 !important; } }
