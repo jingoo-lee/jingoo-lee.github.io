@@ -6,9 +6,9 @@ cv:
   image: ""
   summary: >-
     **Trustworthy Scientific AI for Safety-Critical Structures.**
-    (1) *Physically interpretable deep learning:* 1D CNN kernels (FIR filters) linked to structural transfer functions, yielding a physics-based kernel-size design rule (Nuclear Engineering and Design, 2026; SMiRT-28 Heki Shibata Early Career Award, Honorable Mention).
+    (1) *Physically interpretable deep learning:* 1D CNN kernels (FIR filters) linked to structural transfer functions, yielding a physics-based kernel-size rule K̂ = 1895 / f<sub>n</sub> (Nuclear Engineering and Design, 2026; SMiRT-28 Heki Shibata Early Career Award, Honorable Mention).
     (2) *Neural operators across physics:* seismic structural dynamics with a Windowed Recurrent Fourier Neural Operator (WR-FNO) and electromagnetic NDT with an FNO for eddy-current flaw characterization in steam generator tubes, in international collaboration with CEA List, France and KRISS, Korea — two manuscripts in preparation.
-    (3) *Virtual sensing and uncertainty for NPP seismic safety:* floor responses at 139 locations from a single seismometer, time-series uncertainty propagation, and inspection prioritization (Computer-Aided Civil and Infrastructure Engineering, 2025; Reliability Engineering & System Safety, 2026).
+    (3) *Virtual sensing and uncertainty for NPP seismic safety:* floor responses at 139 locations from a single seismometer (1 → 139), probabilistic prediction under structural uncertainty about 10<sup>5</sup>× faster than 100 Monte Carlo FE runs (35 h → <1 s), and inspection prioritization (Computer-Aided Civil and Infrastructure Engineering, 2025; Reliability Engineering & System Safety, 2026).
 
   social_networks:
     - network: GoogleScholar
@@ -25,7 +25,8 @@ cv:
         end_date: 2027-02
         highlights:
           - "Advisor: Prof. Young-Joo Lee"
-          - "Dissertation: Deep learning-based surrogate modeling for seismic response analysis of nuclear power plant structures"
+          - "Dissertation: A Deep Learning-Based Framework for Predicting Seismic Responses under Uncertainty: Application to Nuclear Power Plant Structures"
+          - "Chapters: Spatial (virtual sensing) → Probabilistic (structural uncertainty) → Interpretable (FIR-filter view of 1D CNN) → Nonlinear (hysteretic response)"
           - "Dissertation defense: Dec. 2, 2026 (scheduled)"
           - "Committee: Prof. Young-Joo Lee (Chair), Prof. Sukhoon Pyo, Prof. Myoungsu Shin, Prof. Junho Song, Dr. Minkyu Kim"
 
@@ -76,7 +77,7 @@ cv:
         start_date: 2022-03
         end_date: present
         highlights:
-          - "Deep learning surrogate models for seismic response of NPP structures: Res-1D CNN virtual sensing, attention-enhanced multimodal deep learning (Att-MMDL) with uncertainty propagation, a filter-theoretic kernel-size design rule, and a Windowed Recurrent Fourier Neural Operator (WR-FNO) for nonlinear multi-DOF response."
+          - "Deep learning surrogate models for seismic response of NPP structures: Res-1D CNN virtual sensing, attention-enhanced multimodal deep learning (Att-MMDL) with uncertainty propagation, a filter-theoretic kernel-size design rule, and a GRU-based model for nonlinear hysteretic response (7-DOF) beyond the design basis."
       - company: CEA List, Université Paris-Saclay (France) & KRISS (Korea)
         position: International Collaboration
         summary: "Fourier Neural Operator for eddy current testing: flaw characterization in steam generator tubes under deposit interference, with P. Calmon, R. Miorelli, A. Skarlatos, A. Kyrgiazoglou (CEA List) and C.-S. Park (KRISS / UST)."
@@ -90,7 +91,7 @@ cv:
       - name: Programming
         keywords: "Python (PyTorch), MATLAB"
       - name: Deep Learning
-        keywords: "1D CNN, residual networks, LSTM, attention mechanisms, Fourier Neural Operators, uncertainty quantification"
+        keywords: "1D CNN, residual networks, LSTM, GRU, attention mechanisms, Fourier Neural Operators, uncertainty quantification"
       - name: Structural Analysis
         keywords: "ABAQUS, finite element analysis, seismic response analysis, fragility assessment, Monte Carlo simulation"
       - name: Signal Processing
