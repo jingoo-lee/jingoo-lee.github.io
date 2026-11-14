@@ -55,7 +55,7 @@ cv:
         url: https://doi.org/10.1111/mice.70051
         summary: "Jingoo Lee, Seungjun Lee, Young-Joo Lee\\*, Jaebeom Lee\\*"
       - title: "Flaw characterization in steam generator tubes under deposit interference using eddy current testing via a Fourier Neural Operator"
-        publisher: "NDT & E International (Under review)"
+        publisher: "In preparation"
         summary: "Jingoo Lee, Choon-Su Park, Pierre Calmon, Roberto Miorelli\\*, Anastasios Skarlatos, Athanasios Kyrgiazolou, Jaebeom Lee\\*"
       - title: "Recurrent Fourier Neural Operator for nonlinear seismic response prediction"
         publisher: "In preparation"
@@ -83,7 +83,7 @@ cv:
           - Windowed Recurrent FNO (WR-FNO) for nonlinear seismic response of multi-DOF systems.
       - company: CEA List, Université Paris-Saclay (France) & KRISS (Korea)
         position: International Collaboration
-        summary: Fourier Neural Operator for eddy current testing — flaw characterization in steam generator tubes under deposit interference (manuscript under review at NDT & E International).
+        summary: Fourier Neural Operator for eddy current testing — flaw characterization in steam generator tubes under deposit interference (manuscript in preparation).
       - company: "Deep learning technologies for assessment of seismic responses and damage of nuclear power plant structures and equipment"
         position: Participating graduate researcher (NRF / Ministry of Science and ICT, in collaboration with KAERI)
         start_date: 2022-04
