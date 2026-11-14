@@ -387,10 +387,8 @@ body > .container, body > main, body > div.container { flex: 1 0 auto; width: 10
 .site-footer { flex-shrink: 0; }
 
 /* consistent page titles */
-.post-header { margin: 96px 0 48px !important; }
 .post-title, .post-header .post-title, .header-bar h1 { font-size: 48px !important; font-weight: 600 !important; letter-spacing: -0.03em; line-height: 1.08; }
 .post-description, .header-bar h2 { font-size: 19px !important; color: var(--text-2) !important; font-weight: 400 !important; }
-.header-bar { margin-top: 96px !important; padding-bottom: 32px; }
 .post-title a.float-right { display: none !important; }
 .post-description .more { margin-left: 12px; }
 .post-description .more::after { content: "\00a0›"; }
@@ -433,9 +431,7 @@ html[data-theme="dark"] .hero-photo img { filter: brightness(0.9); }
 @media (max-width: 734px) {
   .cv .list-group-item > .row { grid-template-columns: minmax(0, 1fr); }
   .cv .list-group-item > .row > div:only-child { grid-column: 1; }
-  .post-header { margin: 56px 0 32px !important; }
   .post-title, .post-header .post-title, .header-bar h1 { font-size: 36px !important; }
-  .header-bar { margin-top: 56px !important; }
 }
 
 /* projects: text list */
@@ -459,15 +455,10 @@ html[data-theme="dark"] .hero-photo img { filter: brightness(0.9); }
 .post-title a.float-right::after { content: "Download PDF\00a0›"; font-size: 17px; font-weight: 400; letter-spacing: -0.01em; color: var(--accent); }
 .cv .table-cv, .cv .table-cv td, .cv .table-cv tr, .cv .date-column table { border: 0 !important; }
 .hero-links a, .hero-links a span { color: var(--accent) !important; }
-.post-header { margin-top: 56px !important; }
-.header-bar { margin-top: 56px !important; }
 .cv .card { padding-left: 0 !important; padding-right: 0 !important; }
 .cv .card > *, .cv .card .table-cv td.p-1 { padding-left: 0 !important; margin-left: 0 !important; }
-@media (max-width: 734px) { .post-header, .header-bar { margin-top: 36px !important; } }
 /* tailwind p-3 is in a cascade layer (its !important wins) → offset children instead */
 .cv .card > * { margin-left: -16px !important; margin-right: -16px !important; }
-.post-header, .header-bar { margin-top: 40px !important; }
-@media (max-width: 734px) { .post-header, .header-bar { margin-top: 16px !important; } }
 /* recheck pass */
 .pub-prep .author + .periodical, .pub-patent .author + .periodical { display: none; }
 .cv .list-group-item > .row > div:first-child, .cv .list-group-item > .row > div:first-child * { text-align: left !important; }
@@ -496,9 +487,7 @@ body > .container > .post, .post { max-width: var(--col); margin-left: auto; mar
 .work-text h3 { font-size: 28px; }
 
 /* page header */
-.post-header { margin: 64px 0 40px !important; }
 .post-title, .post-header .post-title, .header-bar h1 { font-size: 44px !important; }
-.header-bar { margin-top: 64px !important; text-align: left !important; }
 
 /* publications */
 .publications h2.bibliography-section { font-size: 24px; margin-top: 56px; }
@@ -534,9 +523,7 @@ body > .container > .post, .post { max-width: var(--col); margin-left: auto; mar
   .hero-line { font-size: 21px; }
   .work-text h3 { font-size: 24px; }
   .work-media { padding: 12px; }
-  .post-header { margin: 32px 0 28px !important; }
   .post-title, .post-header .post-title, .header-bar h1 { font-size: 34px !important; }
-  .header-bar { margin-top: 32px !important; }
   .cvx-head { flex-direction: column; gap: 2px; }
   .cvx-kv { grid-template-columns: minmax(0, 1fr); gap: 2px; }
   .cvx-kv dd { margin-bottom: 12px; }
@@ -545,3 +532,48 @@ body > .container > .post, .post { max-width: var(--col); margin-left: auto; mar
 .cvx-top a, .cvx-top a span, .cvx-note a, .cvx-note a span { color: var(--accent) !important; }
 .cvx section:last-child { padding-bottom: 72px; }
 .cvx p.cvx-top { color: inherit; }
+
+
+/* ================= layout v3 (single source of truth for page header & rhythm) ================= */
+.post-header, .header-bar { margin: 64px 0 40px !important; padding: 0 !important; border: 0 !important; text-align: left !important; }
+.post-title, .post-header .post-title, .header-bar h1 { font-size: 44px !important; font-weight: 600 !important; letter-spacing: -0.03em; line-height: 1.08; margin: 0 0 12px !important; color: var(--text) !important; }
+.post-description, .header-bar h2, .hero-line { color: var(--text-2) !important; font-size: 19px !important; font-weight: 400 !important; line-height: 1.45; margin: 0 !important; }
+.hero-line { font-size: 24px !important; margin-bottom: 28px !important; }
+.post { padding-bottom: 96px; }
+.about-page { padding-bottom: 0; }
+.post-list > li:last-child, .project-list li:last-child { border-bottom: 0 !important; }
+.publications + *, .publications { margin-bottom: 0; }
+
+/* mobile nav aligns with content */
+#navbar { padding-left: 0 !important; padding-right: 0 !important; }
+#navbar .navbar-toggler { padding-right: 0 !important; margin-right: 0 !important; }
+
+/* CV rhythm */
+.cvx section { padding: 40px 0 40px !important; }
+.cvx section > :last-child, .cvx-entry:last-child, .cvx-kv dd:last-of-type, .cvx ul.plain li:last-child, .cvx-pubs li:last-child { margin-bottom: 0 !important; }
+.cvx section:last-child { padding-bottom: 0 !important; }
+.cvx-top, .cvx-top a { font-size: 17px !important; }
+.cvx-pubs a { margin-left: 0; white-space: nowrap; }
+
+/* home: kicker as small category label */
+.work-kicker { font-size: 13px !important; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-3) !important; }
+html[data-theme="dark"] .work-media img, html[data-theme="dark"] .work-media video { padding: 0 !important; filter: brightness(0.9); }
+.work-media img, .work-media video { border-radius: 10px; }
+
+/* publications: in-prep label like a year row */
+.pub-prep::before { content: "In preparation"; display: block; font-size: 14px; font-weight: 600; color: var(--text-3); margin: 28px 0 0; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+
+/* footer */
+.site-footer { font-size: 13px !important; }
+.site-footer, .site-footer span { color: var(--text-3); }
+.site-footer a { color: var(--text-2) !important; }
+
+@media (min-width: 1600px) { #navbar .nav-link { font-size: 15px; } }
+@media (max-width: 734px) {
+  .post-header, .header-bar { margin: 32px 0 28px !important; }
+  .post-title, .post-header .post-title, .header-bar h1 { font-size: 34px !important; }
+  .hero-line { font-size: 21px !important; }
+  .post { padding-bottom: 64px; }
+  .work-media { padding: 0 !important; background: none !important; }
+  .cvx section { padding: 32px 0 32px !important; }
+}
